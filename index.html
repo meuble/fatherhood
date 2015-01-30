@@ -1,0 +1,918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Sondage sur la paternité</title>
+</head>
+
+<body>
+
+<div id="presentation">
+  <p>Bonjour, je suis étudiante en 9ème année de médecine générale et je réalise ma thèse sur le moral et le vécu des pères après la naissance. La question à laquelle je vais répondre est la suivante : « Quelle est l’incidence de la dépression du post-partum (période après l’accouchement) et de l’anxiété des pères dans les Yvelines entre 3 et 6 mois après la naissance de leur enfant ? »</p>
+
+  <p>Je m’intéresse à ce sujet car il est peu connu des professionnels de santé bien que cette pathologie puisse toucher jusqu’à 10% des pères. Il est démontré que cette pathologie peut avoir des conséquences sur l’enfant, le couple, le père, la société. A mon sens cette pathologie nécessite d’être plus largement dépistée pour pouvoir adresser et prendre en charge précocement les pères et ainsi limiter ses répercussions.</p>
+
+  <p>Le protocole de cette étude qui est menée dans les maternités publiques des Yvelines a reçu l’accord d’un comité d’éthique.</p>
+
+  <form>
+    <input type="checkbox" name="grant_permissions" id="grant_permissions" value="1">
+    <label for="grant_permissions">
+      J’accepte de répondre à ce questionnaire.<br />
+      J’ai bien compris qu’il était anonyme, que mes réponses feront l’objet d’une thèse, que mes réponses peuvent être gardées jusqu’à 1 an par les investigateurs de l’étude, que ce site est sécurisé.
+  Enfin ce questionnaire ne remplace en rien l’évaluation en consultation par un professionnel de santé, son but étant d’orienter vers un possible diagnostic.
+    </label>
+  </form>
+</div>
+
+<form>
+  <div id="infos">
+    <div class="question">
+      <h2>Quel age avez-vous ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="age" id="age_23" value="<23">
+          <label for="age_23">&lt;23</label>
+        </li>
+        <li>
+          <input type="radio" name="age" id="age_29" value="24-29">
+          <label for="age_29">24-29</label>
+        </li>
+        <li>
+          <input type="radio" name="age" id="age_34" value="30-34">
+          <label for="age_34">30-34</label>
+        </li>
+        <li>
+          <input type="radio" name="age" id="age_39" value="35-39">
+          <label for="age_39">35-39</label>
+        </li>
+        <li>
+          <input type="radio" name="age" id="age_40" value=">40">
+          <label for="age_40">&gt;40</label>
+        </li>
+      <ul>
+    </div>
+
+    <div class="question">
+      <h2>Quel est votre niveau d’étude ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="studies" id="studies_highschool" value="brevet des collèges">
+          <label for="studies_highschool">brevet des collèges</label>
+        </li>
+        <li>
+          <input type="radio" name="studies" id="studies_bac" value="BAC">
+          <label for="studies_bac">BAC</label>
+        </li>
+        <li>
+          <input type="radio" name="studies" id="studies_college" value="BAC +3">
+          <label for="studies_college">BAC +3</label>
+        </li>
+        <li>
+          <input type="radio" name="studies" id="studies_university" value=">=BAC +5">
+          <label for="studies_university">&lt;=BAC +5</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Avez-vous un emploi régulier ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="job" id="job_yes" value="oui">
+          <label for="job_yes">oui</label>
+        </li>
+        <li>
+          <input type="radio" name="job" id="job_no" value="non">
+          <label for="job_no">non</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Avez-vous des soucis financiers ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="cash_issues" id="cash_issues_yes" value="oui">
+          <label for="cash_issues_yes">oui</label>
+        </li>
+        <li>
+          <input type="radio" name="job" id="cash_issues_no" value="non">
+          <label for="cash_issues_no">non</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Avez vous participé aux cours de préparation à l’accouchement ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="has_prepared" id="has_prepared_yes" value="oui">
+          <label for="has_prepared_yes">oui</label>
+        </li>
+        <li>
+          <input type="radio" name="has_prepared" id="has_prepared_no" value="non">
+          <label for="has_prepared_no">non</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Considerez-vous que votre relation avec la mère de votre enfant est de bonne qualité ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="has_goodrelation" id="has_goodrelation_yes" value="oui">
+          <label for="has_goodrelation_yes">oui</label>
+        </li>
+        <li>
+          <input type="radio" name="has_goodrelation" id="has_goodrelation_no" value="non">
+          <label for="has_goodrelation_no">non</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Avez vous déjà été traité pour une dépression ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="depressed" id="depressed_yes" value="oui">
+          <label for="depressed_yes">oui</label>
+        </li>
+        <li>
+          <input type="radio" name="depressed" id="depressed_no" value="non">
+          <label for="depressed_no">non</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>La mère de votre enfant a-t-elle fait ou fait-elle un baby blues de plus de 15 jours ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="babyblues" id="babyblues_yes" value="oui">
+          <label for="babyblues_yes">oui</label>
+        </li>
+        <li>
+          <input type="radio" name="babyblues" id="babyblues_no" value="non">
+          <label for="babyblues_no">non</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Votre bébé a-t-il déjà été hospitalisé depuis sa naissance ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="hospitalized_baby" id="hospitalized_baby_yes" value="oui">
+          <label for="hospitalized_baby_yes">oui</label>
+        </li>
+        <li>
+          <input type="radio" name="hospitalized_baby" id="hospitalized_baby_no" value="non">
+          <label for="hospitalized_baby_no">non</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>La mère de votre enfant a-t-elle été hospitalisée pendant sa grossesse ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="hospitalized_mother" id="hospitalized_mother_yes" value="oui">
+          <label for="hospitalized_mother_yes">oui</label>
+        </li>
+        <li>
+          <input type="radio" name="hospitalized_mother" id="hospitalized_mother_no" value="non">
+          <label for="hospitalized_mother_no">non</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>L’accouchement a-t-il été compliqué (extraction instrumentale, césarienne, hémorragie… ou intervention d’un médecin quelqu’en soit la cause) ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="complicated_birth" id="complicated_birth_yes" value="oui">
+          <label for="complicated_birth_yes">oui</label>
+        </li>
+        <li>
+          <input type="radio" name="complicated_birth" id="complicated_birth_no" value="non">
+          <label for="complicated_birth_no">non</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Comment avez-vous vécu la grossesse ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_about_pregnancy" id="feeling_about_pregnancy_very_good" value="Très bien">
+          <label for="feeling_about_pregnancy_very_good">Très bien</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_about_pregnancy" id="feeling_about_pregnancy_good" value="Bien">
+          <label for="feeling_about_pregnancy_good">Bien</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_about_pregnancy" id="feeling_about_pregnancy_difficult" value="Difficilement">
+          <label for="feeling_about_pregnancy_difficult">Difficilement</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_about_pregnancy" id="feeling_about_pregnancy_very_difficult" value="Très difficilement">
+          <label for="feeling_about_pregnancy_very_difficult">Très difficilement</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Comment avez-vous vécu l’accouchement ?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_about_labor" id="feeling_about_labor_very_good" value="Très bien">
+          <label for="feeling_about_labor_very_good">Très bien</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_about_labor" id="feeling_about_labor_good" value="Bien">
+          <label for="feeling_about_labor_good">Bien</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_about_labor" id="feeling_about_labor_difficult" value="Difficilement">
+          <label for="feeling_about_labor_difficult">Difficilement</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_about_labor" id="feeling_about_labor_very_difficult" value="Très difficilement">
+          <label for="feeling_about_labor_very_difficult">Très difficilement</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="stai">
+    <div class="question">
+      <h2>Je me sens de bonne humeur, aimable</h2>
+      <ul>
+        <li>
+          <input type="radio" name="good_mood" id="good_mood_no" value="4">
+          <label for="good_mood_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="good_mood" id="good_mood_rather_no" value="3">
+          <label for="good_mood_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="good_mood" id="good_mood_rather_yes" value="2">
+          <label for="good_mood_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="good_mood" id="good_mood_yes" value="1">
+          <label for="good_mood_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me sens nerveux et agité</h2>
+      <ul>
+        <li>
+          <input type="radio" name="nervous" id="nervous_no" value="1">
+          <label for="nervous_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="nervous" id="nervous_rather_no" value="2">
+          <label for="nervous_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="nervous" id="nervous_rather_yes" value="3">
+          <label for="nervous_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="nervous" id="nervous_yes" value="4">
+          <label for="nervous_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me sens content de moi</h2>
+      <ul>
+        <li>
+          <input type="radio" name="self_happy" id="self_happy_no" value="4">
+          <label for="self_happy_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="self_happy" id="self_happy_rather_no" value="3">
+          <label for="self_happy_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="self_happy" id="self_happy_rather_yes" value="2">
+          <label for="self_happy_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="self_happy" id="self_happy_yes" value="1">
+          <label for="self_happy_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>J’aimerais me sentir aussi heureux que les autres le paraissent</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_happy" id="feeling_happy_no" value="1">
+          <label for="feeling_happy_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_happy" id="feeling_happy_rather_no" value="2">
+          <label for="feeling_happy_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_happy" id="feeling_happy_rather_yes" value="3">
+          <label for="feeling_happy_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_happy" id="feeling_happy_yes" value="4">
+          <label for="feeling_happy_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>J’ai un sentiment d’échec</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_failure" id="feeling_failure_no" value="1">
+          <label for="feeling_failure_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_failure" id="feeling_failure_rather_no" value="2">
+          <label for="feeling_failure_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_failure" id="feeling_failure_rather_yes" value="3">
+          <label for="feeling_failure_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_failure" id="feeling_failure_yes" value="4">
+          <label for="feeling_failure_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me sens reposé</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_rested" id="feeling_rested_no" value="4">
+          <label for="feeling_rested_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_rested" id="feeling_rested_rather_no" value="3">
+          <label for="feeling_rested_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_rested" id="feeling_rested_rather_yes" value="2">
+          <label for="feeling_rested_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_rested" id="feeling_rested_yes" value="1">
+          <label for="feeling_rested_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>J’ai tout mon sang-froid</h2>
+      <ul>
+        <li>
+          <input type="radio" name="cold_blooded" id="cold_blooded_no" value="4">
+          <label for="cold_blooded_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="cold_blooded" id="cold_blooded_rather_no" value="3">
+          <label for="cold_blooded_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="cold_blooded" id="cold_blooded_rather_yes" value="2">
+          <label for="cold_blooded_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="cold_blooded" id="cold_blooded_yes" value="1">
+          <label for="cold_blooded_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>J’ai l’impression que les difficultés s’accumulent</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_overwhelmed" id="feeling_overwhelmed_no" value="1">
+          <label for="feeling_overwhelmed_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_overwhelmed" id="feeling_overwhelmed_rather_no" value="2">
+          <label for="feeling_overwhelmed_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_overwhelmed" id="feeling_overwhelmed_rather_yes" value="3">
+          <label for="feeling_overwhelmed_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_overwhelmed" id="feeling_overwhelmed_yes" value="4">
+          <label for="feeling_overwhelmed_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je m’inquiète à propos de choses sans importance</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_worried" id="feeling_worried_no" value="1">
+          <label for="feeling_worried_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_worried" id="feeling_worried_rather_no" value="2">
+          <label for="feeling_worried_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_worried" id="feeling_worried_rather_yes" value="3">
+          <label for="feeling_worried_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_worried" id="feeling_worried_yes" value="4">
+          <label for="feeling_worried_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je suis heureux</h2>
+      <ul>
+        <li>
+          <input type="radio" name="is_happy" id="is_happy_no" value="4">
+          <label for="is_happy_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="is_happy" id="is_happy_rather_no" value="3">
+          <label for="is_happy_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="is_happy" id="is_happy_rather_yes" value="2">
+          <label for="is_happy_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="is_happy" id="is_happy_yes" value="1">
+          <label for="is_happy_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>J’ai des pensées qui me perturbent</h2>
+      <ul>
+        <li>
+          <input type="radio" name="disturbing_ideas" id="disturbing_ideas_no" value="1">
+          <label for="disturbing_ideas_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="disturbing_ideas" id="disturbing_ideas_rather_no" value="2">
+          <label for="disturbing_ideas_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="disturbing_ideas" id="disturbing_ideas_rather_yes" value="3">
+          <label for="disturbing_ideas_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="disturbing_ideas" id="disturbing_ideas_yes" value="4">
+          <label for="disturbing_ideas_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je manque de confiance en moi</h2>
+      <ul>
+        <li>
+          <input type="radio" name="lacking_confidence" id="lacking_confidence_no" value="1">
+          <label for="lacking_confidence_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="lacking_confidence" id="lacking_confidence_rather_no" value="2">
+          <label for="lacking_confidence_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="lacking_confidence" id="lacking_confidence_rather_yes" value="3">
+          <label for="lacking_confidence_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="lacking_confidence" id="lacking_confidence_yes" value="4">
+          <label for="lacking_confidence_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me sens sans inquiétude, en sécurité, en sûreté</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_secured" id="feeling_secured_no" value="4">
+          <label for="feeling_secured_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_secured" id="feeling_secured_rather_no" value="3">
+          <label for="feeling_secured_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_secured" id="feeling_secured_rather_yes" value="2">
+          <label for="feeling_secured_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_secured" id="feeling_secured_yes" value="1">
+          <label for="feeling_secured_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je prends facilement des décisions</h2>
+      <ul>
+        <li>
+          <input type="radio" name="decision_maker" id="decision_maker_no" value="4">
+          <label for="decision_maker_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="decision_maker" id="decision_maker_rather_no" value="3">
+          <label for="decision_maker_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="decision_maker" id="decision_maker_rather_yes" value="2">
+          <label for="decision_maker_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="decision_maker" id="decision_maker_yes" value="1">
+          <label for="decision_maker_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me sens incompétent, pas à la hauteur</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_incompetent" id="feeling_incompetent_no" value="1">
+          <label for="feeling_incompetent_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_incompetent" id="feeling_incompetent_rather_no" value="2">
+          <label for="feeling_incompetent_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_incompetent" id="feeling_incompetent_rather_yes" value="3">
+          <label for="feeling_incompetent_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_incompetent" id="feeling_incompetent_yes" value="4">
+          <label for="feeling_incompetent_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je suis satisfait</h2>
+      <ul>
+        <li>
+          <input type="radio" name="is_satisfied" id="is_satisfied_no" value="4">
+          <label for="is_satisfied_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="is_satisfied" id="is_satisfied_rather_no" value="3">
+          <label for="is_satisfied_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="is_satisfied" id="is_satisfied_rather_yes" value="2">
+          <label for="is_satisfied_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="is_satisfied" id="is_satisfied_yes" value="1">
+          <label for="is_satisfied_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Des idées sans importance trottent dans ma tête me dérangent</h2>
+      <ul>
+        <li>
+          <input type="radio" name="disturbed_by_ideas" id="disturbed_by_ideas_no" value="1">
+          <label for="disturbed_by_ideas_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="disturbed_by_ideas" id="disturbed_by_ideas_rather_no" value="2">
+          <label for="disturbed_by_ideas_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="disturbed_by_ideas" id="disturbed_by_ideas_rather_yes" value="3">
+          <label for="disturbed_by_ideas_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="disturbed_by_ideas" id="disturbed_by_ideas_yes" value="4">
+          <label for="disturbed_by_ideas_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je prends les déceptions à cœur, je les oublie difficilement</h2>
+      <ul>
+        <li>
+          <input type="radio" name="remember_deceptions" id="remember_deceptions_no" value="1">
+          <label for="remember_deceptions_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="remember_deceptions" id="remember_deceptions_rather_no" value="2">
+          <label for="remember_deceptions_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="remember_deceptions" id="remember_deceptions_rather_yes" value="3">
+          <label for="remember_deceptions_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="remember_deceptions" id="remember_deceptions_yes" value="4">
+          <label for="remember_deceptions_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je suis une personne posée, solide, stable</h2>
+      <ul>
+        <li>
+          <input type="radio" name="is_stable" id="is_stable_no" value="4">
+          <label for="is_stable_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="is_stable" id="is_stable_rather_no" value="3">
+          <label for="is_stable_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="is_stable" id="is_stable_rather_yes" value="2">
+          <label for="is_stable_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="is_stable" id="is_stable_yes" value="1">
+          <label for="is_stable_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je deviens tendu et agité quand je réfléchis à mes soucis</h2>
+      <ul>
+        <li>
+          <input type="radio" name="is_tense" id="is_tense_no" value="1">
+          <label for="is_tense_no">Non</label>
+        </li>
+        <li>
+          <input type="radio" name="is_tense" id="is_tense_rather_no" value="2">
+          <label for="is_tense_rather_no">Plutôt non</label>
+        </li>
+        <li>
+          <input type="radio" name="is_tense" id="is_tense_rather_yes" value="3">
+          <label for="is_tense_rather_yes">Plutôt oui</label>
+        </li>
+        <li>
+          <input type="radio" name="is_tense" id="is_tense_yes" value="4">
+          <label for="is_tense_yes">Oui</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="edinburgh">
+    <div class="question">
+      <h2>J’ai pu rire et prendre les choses du bon coté</h2>
+      <ul>
+        <li>
+          <input type="radio" name="has_laught" id="has_laught_a" value="0">
+          <label for="has_laught_a">Aussi souvent que d’habitude</label>
+        </li>
+        <li>
+          <input type="radio" name="has_laught" id="has_laught_b" value="1">
+          <label for="has_laught_b">Pas tout à fait autant</label>
+        </li>
+        <li>
+          <input type="radio" name="has_laught" id="has_laught_c" value="2">
+          <label for="has_laught_c">Vraiment moins souvent ces jours-ci</label>
+        </li>
+        <li>
+          <input type="radio" name="has_laught" id="has_laught_d" value="3">
+          <label for="has_laught_d">Absolument pas</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me suis senti confiant et joyeux en pensant à l’avenir</h2>
+      <ul>
+        <li>
+          <input type="radio" name="confident_about_futur" id="confident_about_futur_a" value="0">
+          <label for="confident_about_futur_a">Autant que d’habitude</label>
+        </li>
+        <li>
+          <input type="radio" name="confident_about_futur" id="confident_about_futur_b" value="1">
+          <label for="confident_about_futur_b">Plutôt moins que d’habitude</label>
+        </li>
+        <li>
+          <input type="radio" name="confident_about_futur" id="confident_about_futur_c" value="2">
+          <label for="confident_about_futur_c">Vraiment moins que d’habitude</label>
+        </li>
+        <li>
+          <input type="radio" name="confident_about_futur" id="confident_about_futur_d" value="3">
+          <label for="confident_about_futur_d">Pratiquement pas</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me suis reproché, sans raison, d’être responsable quand les choses allaient mal</h2>
+      <ul>
+        <li>
+          <input type="radio" name="self_denunciation" id="self_denunciation_a" value="3">
+          <label for="self_denunciation_a">Oui, la plupart du temps</label>
+        </li>
+        <li>
+          <input type="radio" name="self_denunciation" id="self_denunciation_b" value="2">
+          <label for="self_denunciation_b">Oui, parfois</label>
+        </li>
+        <li>
+          <input type="radio" name="self_denunciation" id="self_denunciation_c" value="1">
+          <label for="self_denunciation_c">Pas très souvent</label>
+        </li>
+        <li>
+          <input type="radio" name="self_denunciation" id="self_denunciation_d" value="0">
+          <label for="self_denunciation_d">Non, jamais</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me suis senti inquiet ou soucieux sans motif</h2>
+      <ul>
+        <li>
+          <input type="radio" name="wrongly_worried" id="wrongly_worried_a" value="0">
+          <label for="wrongly_worried_a">Non, pas du tout</label>
+        </li>
+        <li>
+          <input type="radio" name="wrongly_worried" id="wrongly_worried_b" value="1">
+          <label for="wrongly_worried_b">Presque jamais</label>
+        </li>
+        <li>
+          <input type="radio" name="wrongly_worried" id="wrongly_worried_c" value="2">
+          <label for="wrongly_worried_c">Oui, parfois</label>
+        </li>
+        <li>
+          <input type="radio" name="wrongly_worried" id="wrongly_worried_d" value="3">
+          <label for="wrongly_worried_d">Oui, très souvent</label>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="question">
+      <h2>Je me suis senti effrayé ou paniqué sans vraiment de raison</h2>
+      <ul>
+        <li>
+          <input type="radio" name="frightened" id="frightened_a" value="3">
+          <label for="frightened_a">Oui, vraiment souvent</label>
+        </li>
+        <li>
+          <input type="radio" name="frightened" id="frightened_b" value="2">
+          <label for="frightened_b">Oui, parfois</label>
+        </li>
+        <li>
+          <input type="radio" name="frightened" id="frightened_c" value="1">
+          <label for="frightened_c">Non, pas très souvent</label>
+        </li>
+        <li>
+          <input type="radio" name="frightened" id="frightened_d" value="0">
+          <label for="frightened_d">Non, pas du tout</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>J’ai eu tendance à me sentir dépassé par les évènements</h2>
+      <ul>
+        <li>
+          <input type="radio" name="mostly_overwhelmed" id="mostly_overwhelmed_a" value="3">
+          <label for="mostly_overwhelmed_a">Oui, la plupart du temps, je me suis senti incapable de faire face aux situations</label>
+        </li>
+        <li>
+          <input type="radio" name="mostly_overwhelmed" id="mostly_overwhelmed_b" value="2">
+          <label for="mostly_overwhelmed_b">Oui, parfois, je ne me suis pas senti aussi capable de faire face que d’habitude</label>
+        </li>
+        <li>
+          <input type="radio" name="mostly_overwhelmed" id="mostly_overwhelmed_c" value="1">
+          <label for="mostly_overwhelmed_c">Non, j’ai pu faire face à la plupart des situations</label>
+        </li>
+        <li>
+          <input type="radio" name="mostly_overwhelmed" id="mostly_overwhelmed_d" value="0">
+          <label for="mostly_overwhelmed_d">Non, je me suis senti aussi efficace que d’habitude</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me suis senti si malheureux que j’ai eu des problèmes de sommeil</h2>
+      <ul>
+        <li>
+          <input type="radio" name="mostly_overwhelmed" id="mostly_overwhelmed_a" value="3">
+          <label for="mostly_overwhelmed_a">Oui, la plupart du temps</label>
+        </li>
+        <li>
+          <input type="radio" name="mostly_overwhelmed" id="mostly_overwhelmed_b" value="2">
+          <label for="mostly_overwhelmed_b">Oui, parfois</label>
+        </li>
+        <li>
+          <input type="radio" name="mostly_overwhelmed" id="mostly_overwhelmed_c" value="1">
+          <label for="mostly_overwhelmed_c">Pas très souvent</label>
+        </li>
+        <li>
+          <input type="radio" name="mostly_overwhelmed" id="mostly_overwhelmed_d" value="0">
+          <label for="mostly_overwhelmed_d">Non, pas du tout</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me suis senti triste ou peu heureux</h2>
+      <ul>
+        <li>
+          <input type="radio" name="feeling_sad" id="feeling_sad_a" value="3">
+          <label for="feeling_sad_a">Oui, la plupart du temps</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_sad" id="feeling_sad_b" value="2">
+          <label for="feeling_sad_b">Oui, très souvent</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_sad" id="feeling_sad_c" value="1">
+          <label for="feeling_sad_c">Pas très souvent</label>
+        </li>
+        <li>
+          <input type="radio" name="feeling_sad" id="feeling_sad_d" value="0">
+          <label for="feeling_sad_d">Non, pas du tout</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Je me suis senti si malheureux que j’en ai pleuré</h2>
+      <ul>
+        <li>
+          <input type="radio" name="has_cried" id="has_cried_a" value="3">
+          <label for="has_cried_a">Oui, la plupart du temps</label>
+        </li>
+        <li>
+          <input type="radio" name="has_cried" id="has_cried_b" value="2">
+          <label for="has_cried_b">Oui, très souvent</label>
+        </li>
+        <li>
+          <input type="radio" name="has_cried" id="has_cried_c" value="1">
+          <label for="has_cried_c">Seulement de temps en temps</label>
+        </li>
+        <li>
+          <input type="radio" name="has_cried" id="has_cried_d" value="0">
+          <label for="has_cried_d">Non, jamais</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <h2>Il m’est arrivé de penser à me faire du mal</h2>
+      <ul>
+        <li>
+          <input type="radio" name="hurt_himself" id="hurt_himself_a" value="3">
+          <label for="hurt_himself_a">Oui, très souvent</label>
+        </li>
+        <li>
+          <input type="radio" name="hurt_himself" id="hurt_himself_b" value="2">
+          <label for="hurt_himself_b">Parfois</label>
+        </li>
+        <li>
+          <input type="radio" name="hurt_himself" id="hurt_himself_c" value="1">
+          <label for="hurt_himself_c">Presque jamais</label>
+        </li>
+        <li>
+          <input type="radio" name="hurt_himself" id="hurt_himself_d" value="0">
+          <label for="hurt_himself_d">Jamais</label>
+        </li>
+      </ul>
+    </div>
+    <p><input type="submit" value="Valider le formulaire" /></p>
+  </div>
+</form>
+
+</body>
+</html>
