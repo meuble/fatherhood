@@ -5,18 +5,20 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Sondage sur la paternité</title>
+  <script src="./jquery.min.js" type="text/javascript"></script>
+  <script src="./application.js" type="text/javascript"></script>
 </head>
 
 <body>
 
-<div id="presentation">
+<div id="presentation" class="question">
   <p>Bonjour, je suis étudiante en 9ème année de médecine générale et je réalise ma thèse sur le moral et le vécu des pères après la naissance. La question à laquelle je vais répondre est la suivante : « Quelle est l’incidence de la dépression du post-partum (période après l’accouchement) et de l’anxiété des pères dans les Yvelines entre 3 et 6 mois après la naissance de leur enfant ? »</p>
 
   <p>Je m’intéresse à ce sujet car il est peu connu des professionnels de santé bien que cette pathologie puisse toucher jusqu’à 10% des pères. Il est démontré que cette pathologie peut avoir des conséquences sur l’enfant, le couple, le père, la société. A mon sens cette pathologie nécessite d’être plus largement dépistée pour pouvoir adresser et prendre en charge précocement les pères et ainsi limiter ses répercussions.</p>
 
   <p>Le protocole de cette étude qui est menée dans les maternités publiques des Yvelines a reçu l’accord d’un comité d’éthique.</p>
 
-  <form>
+  <form id="presentation_form">
     <input type="checkbox" name="grant_permissions" id="grant_permissions" value="1">
     <label for="grant_permissions">
       J’accepte de répondre à ce questionnaire.<br />
@@ -910,7 +912,10 @@
         </li>
       </ul>
     </div>
-    <p><input type="submit" value="Valider le formulaire" /></p>
+    
+    <div class="question">
+      <p><input type="submit" value="Valider le formulaire" /></p>
+    </div>
   </div>
 </form>
 
