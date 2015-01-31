@@ -6,7 +6,7 @@ $(function() {
   questions.hide();
 
   questions.each(function(index) {
-    $(this).append('<p><a class="previous" href="#">Précédent</a> <a class="next" href="#">Suivant</a></p>');
+    $(this).append('<p class="commands"><a class="previous" href="#">Précédent</a> <a class="next" href="#">Suivant</a></p>');
   });
 
   var showCurrentStep = function() {
