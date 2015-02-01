@@ -11,6 +11,32 @@ em {
   margin: 1.5%;
 }
 
+#password_protection {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #FADEDE;
+}
+
+#password_protection form {
+  margin: 20% auto;
+  padding: 5%;
+  width: 50%;
+  background-color: rgba(51,51,51,0.3);
+}
+
+#password_protection form label {
+  font-size: 160%;
+  display: block;
+}
+
+#password_protection form input[type=password] {
+  font-size: 160%;
+  width: 100%;
+}
+
 .question {
   position: fixed;
   width: 100%;
@@ -34,7 +60,7 @@ em {
   background-color: rgba(51,51,51,0.7);
 }
 
-.previous, .next {
+.previous, .next, button {
   padding: 1%;
   transition: background-color ease-out 100ms 0;
   color: gray;
@@ -48,7 +74,11 @@ em {
   cursor: pointer;
 }
 
-.previous:hover, .next:hover {
+button {
+  padding: 3% 10%;
+}
+
+.previous:hover, .next:hover, button:hover {
   transition: background-color ease-out 100ms 0;
   background-color: #e6e6e6;
   color: #4d4d4d;
