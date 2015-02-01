@@ -69,3 +69,25 @@ em {
   width: 90%;
   cursor: pointer;
 }
+
+.question ul {
+  list-decoration: none;
+}
+
+.question ul li {
+  list-style-type: none;
+  font-size: 100%;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgba(51,51,51,0.3);
+}
+
+.question ul li label {
+  cursor: pointer;
+  width: 93%;
+  display: inline-block;
+}
+
+.question ul li:hover {
+  background-color: rgba(51,51,51,0.5);
+}

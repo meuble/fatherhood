@@ -17,23 +17,37 @@ $(function() {
     $(questions[currentStep]).hide();
   };
 
-  $('.previous').on('click', function(event) {
+  var validatesStep = function(step) {
+    if (step == 0) {
+      return $('#grant_permissions').is(':checked');
+    }
+    return $('input:checked', questions[step]).length > 0;
+  }
+
+  var nextStep = function(event) {
+    event.preventDefault();
+    if (!validatesStep(currentStep)) {
+      return false;
+    }
+    if (currentStep < questions.length - 1) {
+      hideCurrentStep();
+      currentStep += 1;
+      showCurrentStep();
+    }
+  };
+
+  var previousStep = function(event) {
     event.preventDefault();
     if (currentStep > 0) {
       hideCurrentStep();
       currentStep -= 1;
       showCurrentStep();
     }
-  })
+  };
 
-  $('.next').on('click', function(event) {
-    event.preventDefault();
-    if (currentStep < questions.length - 1) {
-      hideCurrentStep();
-      currentStep += 1;
-      showCurrentStep();
-    }
-  })
+  $('.previous').on('click', previousStep);
+  $('.next').on('click', nextStep);
+  $('.question input[type=radio]').on('change', nextStep);
 
   showCurrentStep();
 })
