@@ -106,3 +106,7 @@ post '/form/:id' do
     redirect "/form/#{form.id}"
   end
 end
+
+get '/thanks' do
+  haml :thanks
+end

@@ -12,6 +12,7 @@ em {
 }
 
 #results,
+#thanks,
 #password_protection {
   position: fixed;
   width: 100%;
@@ -21,7 +22,7 @@ em {
   background-color: #FADEDE;
 }
 
-#results .container,
+.container,
 #password_protection form {
   margin: 20% auto;
   padding: 5%;
