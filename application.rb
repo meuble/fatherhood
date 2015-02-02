@@ -11,6 +11,7 @@ set :haml, :format => :html5
 
 config = YAML::load_file(File.join(File.dirname(File.expand_path(__FILE__)), 'config', 'config.yml'))
 
+config["database"]["host"] = ENV['DATABASE_URL'] if ENV['DATABASE_URL']
 ActiveRecord::Base.establish_connection(config["database"])
 
 class Form < ActiveRecord::Base
