@@ -97,3 +97,12 @@ get '/form/:id' do
   form = Form.find(params[:id])
   haml :result, :locals => {:form => form}
 end
+
+post '/form/:id' do
+  form = Form.find(params[:id])
+  if form.update_attributes(:email => params[:email])
+    redirect '/thanks'
+  else
+    redirect "/form/#{form.id}"
+  end
+end
