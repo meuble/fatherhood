@@ -2,9 +2,12 @@ require 'rubygems'
 require 'yaml'
 require "active_record"
 
-config = YAML::load_file(File.join(File.dirname(File.expand_path(__FILE__)), '..', 'config', 'config.yml'))
+database_config_file = File.join(File.dirname(File.expand_path(__FILE__)), 'config', 'database.yml')
+config_file = File.join(File.dirname(File.expand_path(__FILE__)), 'config', 'config.yml')
 
-ActiveRecord::Base.establish_connection(config["database"])
+config = File.exists?(config_file) ? YAML::load_file(config_file) : {}
+database_config = File.exists?(database_config_file) ? YAML::load(ERB.new(File.read(database_config_file)).result)["production"] : config["database"]
+ActiveRecord::Base.establish_connection(database_config)
 
 ActiveRecord::Schema.define(:version => 201502020055) do
 
