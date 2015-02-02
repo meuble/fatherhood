@@ -29,7 +29,7 @@ class Form < ActiveRecord::Base
   EDINBURG_KEYS = [
     "has_laught", "confident_about_futur", "self_denunciation",
     "wrongly_worried", "frightened", "mostly_overwhelmed",
-    "feeling_sad", "has_cried", "hurt_himself"
+    "sleep_issues", "feeling_sad", "has_cried", "hurt_himself"
   ]
 
   def parsed_data
