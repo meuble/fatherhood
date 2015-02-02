@@ -14,7 +14,7 @@ database_config_file = File.join(File.dirname(File.expand_path(__FILE__)), 'conf
 config_file = File.join(File.dirname(File.expand_path(__FILE__)), 'config', 'config.yml')
 
 config = File.exists?(config_file) ? YAML::load_file(config_file) : {}
-database_config = File.exists?(database_config_file) ? ERB.new(YAML::load_file(database_config_file)).result : config["database"]
+database_config = File.exists?(database_config_file) ? YAML::load_file(ERB.new(File.read(database_config_file)).result).result : config["database"]
 ActiveRecord::Base.establish_connection(database_config)
 
 password = config["password"] || ENV["WEBSITE_PASSWORD"]
