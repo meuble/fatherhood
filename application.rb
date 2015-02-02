@@ -74,7 +74,7 @@ get '/reset_session' do
 end
 
 post '/gate' do
-  if config["password"] == password
+  if password == params[:password]
     session[:has_access] = true
     redirect '/form/new'
   else
