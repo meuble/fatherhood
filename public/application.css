@@ -11,6 +11,7 @@ em {
   margin: 1.5%;
 }
 
+#results,
 #password_protection {
   position: fixed;
   width: 100%;
@@ -20,6 +21,7 @@ em {
   background-color: #FADEDE;
 }
 
+#results .container,
 #password_protection form {
   margin: 20% auto;
   padding: 5%;
@@ -32,9 +34,11 @@ em {
   display: block;
 }
 
+#results form input[type=text],
 #password_protection form input[type=password] {
   font-size: 160%;
   width: 100%;
+  padding: 1%;
 }
 
 .question {

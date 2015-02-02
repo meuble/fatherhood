@@ -42,5 +42,6 @@ DEPENDENCIES
   activerecord
   awesome_print
   haml
+  json
   mysql2
   sinatra
