@@ -8,11 +8,11 @@
       %p
         « Votre niveau d’anxiété est important, nous vous conseillons d’en parler avec un professionnel de santé : médecin traitant, obstétricien, sage femme, psychologue »
 
-    - if form.results[:edinburg] >= 12 || form.parsed_data["hurt_himself"].to_i < 3
+    - if form.results[:edinburg] >= 12 || form.parsed_data["hurt_himself"].to_i >= 2
       %p
         « Le résultat de ce test indique que votre moral n’est pas bon, il est important de consulter un médecin rapidement pour une évaluation plus poussée de votre état de santé. »
 
-    - if form.results[:edinburg] < 12 && form.parsed_data["hurt_himself"].to_i >= 3 && form.results[:stai] < 46
+    - if form.results[:edinburg] < 12 && form.parsed_data["hurt_himself"].to_i < 2 && form.results[:stai] < 46
       %p
         « Les résultats que vous avez obtenus à ce questionnaire sont rassurants, vous ne semblez pas souffrir d’anxiété ni de dépression.<br />
         Cependant n’hésitez pas à consulter un professionnel de santé si vous avez l’impression que votre moral se détériore. »
